@@ -5,9 +5,12 @@
 }
 
 body {
+  margin: auto;
   background-color: $primary;
   font-family: $primaryFont;
   color: $secondary;
+  min-height: 100vh;
+  min-width: 100vw;
 
   a {
     color: $accent;

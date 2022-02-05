@@ -1,1 +1,29 @@
 @import '../globals';
+
+.landing {
+  margin: auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+
+  @include lg {
+    width: 25%;
+  }
+
+  img {
+    align-self: center;
+    width: 40%;
+  }
+
+  p {
+    align-self: center;
+    justify-self: center;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.15rem;
+    word-spacing: -1px;
+  }
+}
