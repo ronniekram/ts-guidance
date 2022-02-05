@@ -1,0 +1,18 @@
+@import './globals';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary;
+  font-family: $primaryFont;
+  color: $secondary;
+
+  a {
+    color: $accent;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
