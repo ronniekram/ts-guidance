@@ -1,0 +1,42 @@
+@import './breakpoints';
+// MEDIA QUERIES
+
+@mixin xs {
+  @media only screen and (max-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+@mixin s-height {
+  @media only screen and (max-height: #{$screen-height-sm}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin sm {
+  @media only screen and (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media only screen and (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media only screen and (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// POSITIONING
+
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
