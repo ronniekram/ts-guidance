@@ -15,7 +15,11 @@
 
   img {
     align-self: center;
-    width: 40%;
+    width: 50%;
+
+    @include lg {
+      width: 40%;
+    }
   }
 
   p {
@@ -25,5 +29,11 @@
     font-size: 1rem;
     line-height: 1.15rem;
     word-spacing: -1px;
+    margin: 0.5rem 0;
+  }
+
+  span {
+    color: $accent;
+    font-weight: 500;
   }
 }

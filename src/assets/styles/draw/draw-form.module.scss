@@ -1,1 +1,35 @@
 @import '../globals';
+
+.form {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  @include flex-center;
+
+  div {
+    padding: 0.5rem;
+  }
+
+  form {
+    input,
+    button {
+      margin: 0.25rem;
+      background: $white;
+      border: 1px solid $secondary;
+      border-radius: 0.25rem;
+
+      &:focus {
+        outline: 2px solid $focusRing;
+      }
+    }
+
+    input {
+      padding: 0.25rem 0.25rem;
+    }
+
+    button {
+      padding: 0.25rem 1rem;
+      letter-spacing: 1px;
+    }
+  }
+}
