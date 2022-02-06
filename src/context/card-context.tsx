@@ -5,6 +5,7 @@ export interface CardData {
   cardType: string;
   name: string;
   image?: string;
+  suit?: string;
   meaning_up: string;
   meaning_rev: string;
   desc: string;
