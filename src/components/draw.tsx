@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CardData, CardsContext } from '../context/card-context';
+import Cards from './cards';
 
 interface DrawProps {
   question: string;
@@ -13,7 +14,7 @@ const Draw = ({ question }: DrawProps) => {
   const cards: CardData[] = getCards();
 
   useEffect(() => {
-    if (question === '') {
+    if (question.trim() === '') {
       navigate('/ask');
     }
   });

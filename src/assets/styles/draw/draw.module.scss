@@ -1,1 +1,71 @@
 @import '../globals';
+
+.draw {
+  max-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  padding: 0.5rem;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  @include flex-center;
+
+  @include xs {
+    margin-top: 3rem;
+  }
+
+  @include lg {
+    margin-top: -2rem;
+    width: 100%;
+  }
+
+  @include s-height {
+    margin-top: 5rem;
+  }
+
+  .question {
+    color: $accent;
+    line-height: 0;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    word-spacing: 1.5px;
+    text-align: center;
+
+    -webkit-animation: text-focus-in 1.25s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+      0.1s both;
+    animation: text-focus-in 1.25s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.1s
+      both;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

@@ -1,1 +1,163 @@
 @import '../globals';
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 2rem;
+
+  .header {
+    font-family: $secondaryFont;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    h1 {
+      margin: 0;
+      line-height: 0.75;
+      letter-spacing: -3px;
+      font-size: 2.5rem;
+      text-align: left;
+
+      @include lg {
+        font-size: 3.15rem;
+      }
+    }
+
+    h2 {
+      margin: 0;
+      line-height: 1.5rem;
+      letter-spacing: -1px;
+      word-spacing: 0.25rem;
+      font-size: 1.5rem;
+      color: $accent;
+      text-align: right;
+    }
+  }
+
+  .text {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .summary {
+      margin-top: 0.5rem;
+      text-align: justify;
+
+      @include lg {
+        margin-top: 1rem;
+      }
+
+      p {
+        font-family: $primaryFont;
+        line-height: 16px;
+        letter-spacing: -0.75px;
+        font-size: 15px;
+
+        @include lg {
+          line-height: 18px;
+        }
+      }
+    }
+
+    .directionContainer {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .directions {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        margin-left: 0.5rem;
+        max-width: 80%;
+
+        h4 {
+          line-height: 5px;
+          letter-spacing: -0.5px;
+          font-size: 1rem;
+          font-weight: 700;
+
+          text-transform: uppercase;
+        }
+
+        p {
+          margin-top: -0.5rem;
+          padding: 0;
+          line-height: 15px;
+          letter-spacing: -0.5px;
+          font-size: 14px;
+        }
+      }
+
+      .sheath {
+        max-width: 15%;
+        width: 15%;
+        height: auto;
+        margin: 0;
+        padding: 0.25rem;
+        display: flex;
+        justify-content: center;
+
+        .sword {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// .fade-in {
+// 	-webkit-animation: fade-in 1.5s ease-in-out both;
+// 	        animation: fade-in 1.5s ease-in-out both;
+// }
+
+// .fade-out {
+// 	-webkit-animation: fade-out 1s ease-out both;
+// 	        animation: fade-out 1s ease-out both;
+// }
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation fade-out
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
