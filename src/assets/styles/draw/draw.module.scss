@@ -1,31 +1,30 @@
 @import '../globals';
 
 .draw {
-  max-height: 100vh;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
   margin: auto;
   display: flex;
   flex-flow: column nowrap;
-  @include flex-center;
 
   @include xs {
-    margin-top: 3rem;
+    // margin-top: 3rem;
   }
 
   @include lg {
-    margin-top: -2rem;
-    width: 100%;
+    margin-top: 0;
+    width: 90%;
+    align-self: center;
   }
 
   @include s-height {
-    margin-top: 5rem;
+    // margin-top: 5rem;
   }
 
   .question {
     color: $accent;
-    line-height: 0;
+    // line-height: 0;
     padding: 0.5rem;
     text-transform: uppercase;
     font-weight: 400;

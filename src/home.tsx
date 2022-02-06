@@ -6,7 +6,7 @@ import Draw from './components/draw';
 import styles from './assets/styles/home.module.scss';
 
 const Home = () => {
-  const [question, setQuestion] = useState<string>('');
+  const [question, setQuestion] = useState<string>('h');
 
   return (
     <>

@@ -89,11 +89,11 @@ export const allCards = [
   },
   {
     cardType: 'Major',
-    name: 'Fortitude',
+    name: 'Strength',
     summary:
       'You won’t change a situation by being pushy or demanding and avoid being arrogant or proud. Harness feelings of anger or resentment and channel them into something more constructive that can better your situation. There is a difference between assertion and aggression.',
     image:
-      'https://raw.githubusercontent.com/ronniekram/tarot-db/main/images/fortitude.png',
+      'https://raw.githubusercontent.com/ronniekram/tarot-db/main/images/strength.png',
     meaning_up:
       'Power, energy, action, courage, magnanimity; also complete success and honours.',
     meaning_rev:

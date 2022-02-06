@@ -1,9 +1,11 @@
 @import '../globals';
 
 .container {
+  height: 70vh;
   display: flex;
   flex-flow: column nowrap;
-  padding: 2rem;
+  // justify-content: center;
+  padding: 1rem 1rem;
 
   .header {
     font-family: $secondaryFont;
@@ -13,12 +15,12 @@
     h1 {
       margin: 0;
       line-height: 0.75;
-      letter-spacing: -3px;
-      font-size: 2.5rem;
+      letter-spacing: -2px;
+      font-size: 2.25rem;
       text-align: left;
 
       @include lg {
-        font-size: 3.15rem;
+        font-size: 2.65rem;
       }
     }
 
@@ -27,7 +29,7 @@
       line-height: 1.5rem;
       letter-spacing: -1px;
       word-spacing: 0.25rem;
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       color: $accent;
       text-align: right;
     }
@@ -105,59 +107,5 @@
         }
       }
     }
-  }
-}
-
-// .fade-in {
-// 	-webkit-animation: fade-in 1.5s ease-in-out both;
-// 	        animation: fade-in 1.5s ease-in-out both;
-// }
-
-// .fade-out {
-// 	-webkit-animation: fade-out 1s ease-out both;
-// 	        animation: fade-out 1s ease-out both;
-// }
-
-/**
- * ----------------------------------------
- * animation fade-in
- * ----------------------------------------
- */
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/**
- * ----------------------------------------
- * animation fade-out
- * ----------------------------------------
- */
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }

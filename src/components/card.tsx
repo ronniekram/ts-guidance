@@ -3,7 +3,14 @@ import { CardData } from '../context/card-context';
 import sword from '../assets/svg/sword.svg';
 import styles from '../assets/styles/cards/card.module.scss';
 
-const Card = ({ cardType, name, meaning_up, meaning_rev, desc }: CardData) => {
+const Card = ({
+  cardType,
+  name,
+  meaning_up,
+  meaning_rev,
+  desc,
+  summary,
+}: CardData) => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -13,7 +20,7 @@ const Card = ({ cardType, name, meaning_up, meaning_rev, desc }: CardData) => {
 
       <div className={styles.text}>
         <div className={styles.summary}>
-          <p>{desc}</p>
+          <p>{summary}</p>
         </div>
 
         <div className={styles.directionContainer}>

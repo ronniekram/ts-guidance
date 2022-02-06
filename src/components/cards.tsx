@@ -6,8 +6,6 @@ import styles from '../assets/styles/cards/cards.module.scss';
 const Cards = ({ cards }: CardsData) => {
   const [showCard, setShowCard] = useState<CardData>(cards[0]);
 
-  debugger;
-
   const handleClick = (card: any) => {
     setShowCard(card);
   };
@@ -39,6 +37,7 @@ const Cards = ({ cards }: CardsData) => {
           desc={showCard.desc}
           meaning_up={showCard.meaning_up}
           meaning_rev={showCard.meaning_rev}
+          summary={showCard.summary}
         />
       </section>
 
