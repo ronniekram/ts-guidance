@@ -1,4 +1,5 @@
 import React, { SetStateAction, Dispatch, FormEvent } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from '../assets/styles/draw/draw-form.module.scss';
 
 interface FormProps {
@@ -7,9 +8,11 @@ interface FormProps {
 }
 
 const DrawForm = ({ question, setQuestion }: FormProps) => {
+  const navigate = useNavigate();
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    alert(question);
+    navigate('/draw');
   };
 
   return (
@@ -18,8 +21,6 @@ const DrawForm = ({ question, setQuestion }: FormProps) => {
 
       <form onSubmit={handleSubmit}>
         <input
-          id='question'
-          name='question'
           type='text'
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
